@@ -10,6 +10,7 @@ import {
     Image as ImageIcon,
     Zap,
 } from 'lucide-react';
+import NewsWidget from '@/components/NewsWidget';
 
 const navItems = [
     { label: 'Alpha Dashboard', href: '/', icon: TrendingUp },
@@ -120,6 +121,9 @@ export default function Sidebar() {
                     );
                 })}
             </nav>
+
+            {/* News Widget underneath navigation, but above footer */}
+            <NewsWidget />
 
             {/* Footer */}
             <div
